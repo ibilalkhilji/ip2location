@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Khaleejinfotech\\Ip2location\\": "src/"
+            "Khaleejinfotech\\IP2Location\\": "src/"
         }
     },
     "authors": [
