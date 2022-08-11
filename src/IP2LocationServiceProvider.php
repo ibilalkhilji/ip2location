@@ -13,6 +13,7 @@ class IP2LocationServiceProvider extends ServiceProvider
         ]);
     }
 
+
     public function register()
     {
         parent::register();
