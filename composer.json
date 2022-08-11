@@ -3,7 +3,7 @@
     "description": "Laravel package to determine location using ip address with lat-long and proxy",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "7.4"
+        "guzzlehttp/guzzle": "^7.4"
     },
     "license": "MIT",
     "autoload": {
