@@ -30,7 +30,7 @@ Open the **config/ip2location.php** in any text editor and add your api key obta
 <?php
 
 return [
-    'api_key' => env('IP2LOCATION_API','')
+    'api_key' => env('IP2LOCATION_API')
 ];
 
 ```
