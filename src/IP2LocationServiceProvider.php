@@ -1,5 +1,6 @@
 <?php
 
+namespace Khaleejinfotech\IP2Location;
 
 use Illuminate\Support\ServiceProvider;
 
