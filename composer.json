@@ -21,7 +21,7 @@
     "extras": {
         "laravel": {
             "providers": [
-                "Khaleejinfotech\\Ip2location\\IP2LocationServiceProvider"
+                "Khaleejinfotech\\IP2Location\\IP2LocationServiceProvider"
             ]
         }
     }
