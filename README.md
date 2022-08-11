@@ -7,7 +7,7 @@ VPNAPI.io.
 
 ## INSTALLATION
 
-Run the command: `composer require khaleejinfotech/ip2location-laravel` to download the package into the Laravel platform.
+Run the command: `composer require khaleejinfotech/ip2location` to download the package into the Laravel platform.
 
 ## USAGE
 
