@@ -9,6 +9,32 @@ VPNAPI.io.
 
 Run the command: `composer require khaleejinfotech/ip2location` to download the package into the Laravel platform.
 
+
+After you have installed the package, open your Laravel config file config/app.php and add the following lines.
+
+In the $providers array add the service providers for this package.
+
+```
+Khaleejinfotech\IP2Location\IP2LocationServiceProvider::class,
+```
+
+Publish the config file with
+
+```
+php artisan vendor:publish --tag="ip2location"
+```
+
+Open the **config/ip2location.php** in any text editor and add your api key obtained from vpnapi.io
+
+```php
+<?php
+
+return [
+    'api_key' => env('IP2LOCATION_API','')
+];
+
+```
+
 ## USAGE
 
 Create a **TestController** in Laravel using the below command line
@@ -67,20 +93,3 @@ Route::get('test', [TestController::class,'lookup');
 ```
 
 Enter the URL localhost:8000/test and run. You should see the information of **8.8.8.8** IP address.
-
-Publish the config file with
-
-```
-php artisan vendor:publish --tag=":ip2location-config"
-```
-
-Open the **config/ip2location.php** in any text editor and add your api key obtained from vpnapi.io
-
-```php
-<?php
-
-return [
-    'api_key' => env('IP2LOCATION_API','')
-];
-
-```
