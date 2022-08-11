@@ -24,10 +24,14 @@ class IP2Location
 
     /**
      * Method use to lookup information for the given ip address.
+     * @throws Exception
      */
     public function lookup()
     {
         $client = new Client(['base_uri' => 'https://vpnapi.io']);
+
+        if (config('ip2location.api_key') == null || config('ip2location.api_key') == '')
+            throw new Exception('API Key not defined');
 
         try {
             $res = $client->request('GET', "/api/$this->ip?key=" . config('ip2location.api_key'));
