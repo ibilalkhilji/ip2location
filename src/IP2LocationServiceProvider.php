@@ -10,7 +10,7 @@ class IP2LocationServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/ip2location.php' => config_path('ip2location.php')
-        ]);
+        ],'ip2location');
     }
 
 
