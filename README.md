@@ -64,11 +64,11 @@ class TestController extends Controller
             $ip2Location->lookup();
             $response = $ip2Location->getResponse();
 		
-            echo 'IP Address             : ' . $response->getIp() . "<br>";
+            echo 'IP Address            : ' . $response->getIp() . "<br>";
 		
-            echo 'Detect VPN             : ' . $response->isVPN() . "<br>";
-            echo 'Detect Proxy             : ' . $response->isProxy() . "<br>";
-            echo 'Detect Tor             : ' . $response->isTor() . "<br>";
+            echo 'Detect VPN            : ' . $response->isVPN() . "<br>";
+            echo 'Detect Proxy          : ' . $response->isProxy() . "<br>";
+            echo 'Detect Tor            : ' . $response->isTor() . "<br>";
 		
             echo 'Country Code          : ' . $response->getCountryCode() . "<br>";
             echo 'Country Name          : ' . $response->getCountryName() . "<br>";
