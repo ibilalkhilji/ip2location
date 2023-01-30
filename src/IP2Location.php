@@ -34,7 +34,7 @@ class IP2Location
             throw new Exception('API Key not defined');
 
         try {
-            $res = $client->request('GET', "/api/$this->ip?key=" . config('ip2location.api_key'));
+            $res = $client->request('GET', "/api/$this->ip?key=" . config('ip2location.api_key'), ['verify' => false]);
             $this->response = $this->parseResponse($res->getBody()->getContents());
             return $this;
         } catch (GuzzleException $exception) {
